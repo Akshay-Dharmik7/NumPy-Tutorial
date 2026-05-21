@@ -64,3 +64,37 @@ Example: np.array([[[1,2]], [[3,4]]])
 | `array`   | Original array                   |
 | `index`   | Position where value is inserted |
 | `value`   | Element to insert                |
+
+
+### Insert into 2-D Array 
+### Syntax:
+- np.insert(array, index, value, axis)  
+
+| Parameter | Meaning                          |
+| --------- | -------------------------------- |
+| `array`   | Original array                   |
+| `index`   | Position where value is inserted |
+| `value`   | Element to insert                |
+| `axis`    | set axis(row/column)             | 
+
+#### Example: 
+arr = np.array([[1, 2], [4, 5]])  
+
+new_arr = np.insert(arr, 1, [3, 3], axis=0)  
+print(new_arr)  
+
+- axis=0 → insert row
+- axis=1 → insert column
+
+
+## Appending Elements in NumPy Arrays
+- Appending means adding elements at the end of an array. In NumPy, this is done using np.append().  
+### Syntax:
+- np.append(array, values, axis=None)  
+
+| Parameter | Meaning                                |
+| --------- | ---------------------------------------|
+| `array`   | Original array                         |
+| `values`  | Value(s) to add                        |
+| `axis`    | Where to add (optional for 1d arrray)  |
+
