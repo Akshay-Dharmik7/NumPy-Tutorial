@@ -98,3 +98,26 @@ print(new_arr)
 | `values`  | Value(s) to add                        |
 | `axis`    | Where to add (optional for 1d arrray)  |
 
+
+## Removing Elements from NumPy Arrays
+- In NumPy, elements are removed using functions like np.delete() because arrays have fixed size (unlike Python lists).  
+
+### 1. Using np.delete():  
+#### Syntax:
+- np.delete(array, index) 
+
+| Parameter | Meaning                       |
+| --------- | ----------------------------- |
+| `array`   | Original array                |
+| `index`   | Position of element to remove |
+
+### 2. Removing from 2-D Array
+#### Example:
+arr = np.array([[1, 2, 3], [4, 5, 6]])  
+
+new_arr = np.delete(arr, 1, axis=0)  
+print(new_arr)  
+
+#### Explanation:
+- axis=0 → row removal
+- axis=1 → column removal
