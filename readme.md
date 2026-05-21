@@ -140,4 +140,48 @@ arr2 = np.array([5, 6, 7, 8])
 new_arr = np.concatenate((arr1, arr2))   
 print(new_arr)  
 
-### 12) Concatenate 2d array
+### 2) Concatenate 2d array
+#### Example:
+arr1 = np.array([[1, 2, 3], [4, 5, 6]])  
+arr2 = np.array([[5, 6, 7], [8, 9, 0]])  
+
+new_arr = np.concatenate((arr1, arr2), axis = 0)   
+print(new_arr)  
+
+## Stacking in numpy
+- Stacking in NumPy means combining multiple arrays together either vertically, horizontally, or along a new axis.  
+- NumPy provides several stacking functions:  
+
+| Function         | Purpose                           |
+| ---------------- | --------------------------------- |
+| `stack()`        | Join arrays along a new axis      |
+| `vstack()`       | Vertical stacking (row-wise)      |
+| `hstack()`       | Horizontal stacking (column-wise) |
+| `dstack()`       | Depth-wise stacking               |
+| `column_stack()` | Stack 1D arrays as columns        |
+| `row_stack()`    | Stack arrays row-wise             |
+
+#### 1. stack() Function:
+- Creates a new dimension while joining arrays.  
+- np.stack((a, b), axis=0)  
+
+#### 2. vstack() → Vertical Stack: 
+- Stacks arrays row-wise.  
+- result = np.vstack((a, b))
+
+#### 3. hstack() → Horizontal Stack
+- Stacks arrays column-wise.  
+- result = np.hstack((a, b))
+
+#### 4. dstack() → Depth Stack  
+- Stacks arrays along the third dimension.  
+- result = np.dstack((a, b))
+
+#### 5. column_stack()
+- Stacks 1D arrays as columns.  
+- result = np.column_stack((a, b))
+
+#### 6. row_stack(): 
+- Stacks arrays row-wise.  
+- result = np.row_stack((a, b))
+
