@@ -121,3 +121,23 @@ print(new_arr)
 #### Explanation:
 - axis=0 → row removal
 - axis=1 → column removal
+
+## Concatenate array
+- The concatenate() function in NumPy is used to join two or more arrays together along a specified axis.  
+### Syntax:
+- numpy.concatenate((array1, array2, ...), axis=0)
+
+| Parameter | Description                        |
+| --------- | ---------------------------------- |
+| `arrays`  | Tuple or list of arrays to join    |
+| `axis`    | Axis along which arrays are joined |
+
+### 1) Concatenate 1d array
+#### Example: 
+arr1 = np.array([1, 2, 3, 4])  
+arr2 = np.array([5, 6, 7, 8])  
+
+new_arr = np.concatenate((arr1, arr2))   
+print(new_arr)  
+
+### 12) Concatenate 2d array
