@@ -53,3 +53,14 @@ Example: np.array([[[1,2]], [[3,4]]])
 | ----------- | -------------------------------------- | --------------- |
 | `flatten()` | Returns a flattened copy of the array  | `arr.flatten()` |
 | `ravel()`   | Returns a flattened view (if possible) | `arr.ravel()`   |
+
+## Insert Elements into NumPy Arrays
+- In NumPy, elements can be inserted into an array using the np.insert() function.  
+### Syntax:
+- np.insert(array, index, value)  
+
+| Parameter | Meaning                          |
+| --------- | -------------------------------- |
+| `array`   | Original array                   |
+| `index`   | Position where value is inserted |
+| `value`   | Element to insert                |
