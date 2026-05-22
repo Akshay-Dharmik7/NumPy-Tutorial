@@ -16,7 +16,6 @@ print(np.split(arr1, [3]))
 # array_split()
 print(np.array_split(arr1, 3))  #allow unequal splitting
 
-
 # vsplit and hsplit work on 2d array
 # vsplit
 print(np.vsplit(arr2, 2))
