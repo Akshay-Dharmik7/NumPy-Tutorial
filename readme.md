@@ -398,3 +398,42 @@ Instead of using for loop element by element NumPy performs operations directly 
 | `np.maximum()` | Element-wise maximum |
 | `np.minimum()` | Element-wise minimum |
 
+
+## Handling missing and incorrect values:
+- Handling missing and incorrect values in NumPy is important in data processing and analysis.
+- NumPy mainly handles:
+     - Missing values (NaN)
+     - Infinite values (inf)
+     - replace missing value to number (nan_to_num)
+     - Incorrect/invalid values
+     - Null-like values
+
+### 1. Missing Values in NumPy
+- NumPy represents missing values using:  `np.nan`  
+- NaN means - Not a Number
+
+
+### 2. Handling Infinite Values
+- NumPy may represent infinite values using: `np.inf` and `-np.inf`
+
+### 3. Replacing Missing/Infinite values
+#### nan_to_num():
+
+- nan_to_num() in NumPy is used to replace:
+     - NaN values
+     - Positive infinity (inf)
+     - Negative infinity (-inf)
+- with numeric values.
+- nan_to_num() in NumPy is used to replace NaN and infinite values with finite numeric values to clean and stabilize numerical computations
+- Syntax:
+     - `np.nan_to_num(array, nan=0.0, posinf=None, neginf=None)`
+
+| Parameter | Description             |
+| --------- | ----------------------- |
+| `array`   | Input array             |
+| `nan`     | Value to replace `NaN`  |
+| `posinf`  | Value to replace `+inf` |
+| `neginf`  | Value to replace `-inf` |
+
+
+
