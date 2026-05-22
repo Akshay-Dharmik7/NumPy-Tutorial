@@ -185,3 +185,66 @@ print(new_arr)
 - Stacks arrays row-wise.  
 - result = np.row_stack((a, b))
 
+## Splitting in NumPy means dividing an array into multiple smaller arrays.
+- NumPy provides several functions for splitting arrays.
+### Types of Splitting Functions:
+| Function        | Purpose                                      |
+| --------------- | -------------------------------------------- |
+| `split()`       | General splitting                            |
+| `array_split()` | Split even if equal division is not possible |
+| `hsplit()`      | Horizontal split                             |
+| `vsplit()`      | Vertical split                               |
+| `dsplit()`      | Depth split                                  |
+
+### 1. split() Function: 
+- Splits an array into equal parts.  
+- np.split(array, sections, axis=0)  
+
+| Parameter  | Description                         |
+| ---------- | ----------------------------------- |
+| `array`    | Input array                         |
+| `sections` | Number of splits or index positions |
+| `axis`     | Axis to split                       |
+
+#### Example 1: Split 1D Array:
+arr = np.array([1, 2, 3, 4, 5, 6])  
+result = np.split(arr, 3)  
+print(result)  
+
+#### Example 2: Split Using Index Positions:
+arr = np.array([1, 2, 3, 4, 5, 6])  
+result = np.split(arr, [2, 4])  
+print(result)  
+
+###  2. array_split() Function
+- Used when equal division is NOT possible.
+#### Example:
+arr = np.array([1, 2, 3, 4, 5])  
+result = np.array_split(arr, 3)  
+print(result)  
+
+
+### Difference:
+ - split() → requires equal division
+ - array_split() → allows unequal division
+
+### 3. hsplit() → Horizontal Split
+- Splits columns.
+#### Example:
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])   
+result = np.hsplit(arr, 2)  
+print(result)  
+
+### 4. vsplit() → Vertical Split
+- Splits rows.  
+#### Example:
+arr = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])   
+result = np.vsplit(arr, 2)  
+print(result) 
+
+### 5. dsplit() → Depth Split
+- Splits along third axis.
+#### Example:
+arr = np.array([[[1, 2], [3, 4]]])  
+result = np.dsplit(arr, 2)  
+print(result)  
