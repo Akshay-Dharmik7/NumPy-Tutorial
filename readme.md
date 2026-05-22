@@ -362,3 +362,39 @@ print(result)
 arr1 = np.array([[1, 2], [3, 4]])  
 result = arr1 + [5, 6, 7]  
 print(result)  
+
+## Vectorization in NumPy:
+- Vectorization in NumPy means performing operations on entire arrays at once instead of using loops.
+- It makes code:
+     - Faster
+     - Shorter
+     - More memory efficient
+
+### What is Vectorization?
+Instead of using for loop element by element NumPy performs operations directly on arrays internally using optimized C code.  
+
+### Why Vectorization is Fast
+- NumPy arrays are:
+     - Stored in contiguous memory
+     - Implemented in optimized C
+     - Processed using SIMD/internal optimizations
+- So operations are much faster than Python loops.
+
+### Common Vectorized Operations
+- Addition: a+b
+- Subtraction: a-b
+- Multiplication: a*b
+- Division: a/b
+- Power: a**b
+
+### Important Vectorized Functions
+| Function       | Purpose              |
+| -------------- | -------------------- |
+| `np.sqrt()`    | Square root          |
+| `np.exp()`     | Exponential          |
+| `np.log()`     | Logarithm            |
+| `np.sin()`     | Sine                 |
+| `np.cos()`     | Cosine               |
+| `np.maximum()` | Element-wise maximum |
+| `np.minimum()` | Element-wise minimum |
+

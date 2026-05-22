@@ -16,4 +16,3 @@ print(num_arr_3d.ndim)
 
 nd_arr = np.array([1, 2, 3, 4,  5], ndmin= 3)
 print(nd_arr)
-
