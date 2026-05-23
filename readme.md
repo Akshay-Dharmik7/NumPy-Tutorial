@@ -487,3 +487,13 @@ Instead of using for loop element by element NumPy performs operations directly 
 | `value`   | Value to search       |
 | `side`    | `'left'` or `'right'` |
 
+### 6. extract():
+- extract() in NumPy is used to extract elements from an array that satisfy a given condition.
+- It works similar to boolean masking.
+- Syntax:
+     - np.extract(condition, array)
+
+| Parameter   | Description       |
+| ----------- | ----------------- |
+| `condition` | Boolean condition |
+| `array`     | Input array       |
