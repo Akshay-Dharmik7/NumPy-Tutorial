@@ -1,6 +1,7 @@
 import numpy as np
 
 arr = np.array([10, 20, 30, 40])
+# arr = np.array([10, 50, 20, 30, 40])
 
 result = np.searchsorted(arr, 20)
 print(result)

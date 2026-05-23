@@ -497,3 +497,14 @@ Instead of using for loop element by element NumPy performs operations directly 
 | ----------- | ----------------- |
 | `condition` | Boolean condition |
 | `array`     | Input array       |
+
+### 7. argwhere():
+- argwhere() in NumPy is used to find the indices of elements that satisfy a condition.
+- It returns the positions (indices) of matching elements.
+- Syntax:
+     - np.argwhere(condition)
+
+| Parameter   | Description       |
+| ----------- | ----------------- |
+| `condition` | Boolean condition |
+
