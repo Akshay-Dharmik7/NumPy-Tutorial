@@ -460,3 +460,14 @@ Instead of using for loop element by element NumPy performs operations directly 
 - Find elements matching a condition.
 - Syntax: 
      - np.where(condition)
+
+### 2. argmax() Function:
+- Returns index of maximum value.
+- Syntax:
+     - np.argmax(array)
+
+### 3. argmin() Function:
+- Returns index of minimum value.
+- Syntax:
+     - np.argmin(array)
+
