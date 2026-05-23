@@ -521,3 +521,39 @@ Instead of using for loop element by element NumPy performs operations directly 
 | `argsort()` | Return sorted indices |
 | `lexsort()` | Multi-key sorting     |
 | `msort()`   | Sort along first axis |
+
+
+## 2 argsort():
+- argsort() in NumPy is used to return the indices that would sort an array.
+- Instead of returning sorted values, it returns the positions (indices) of elements in sorted order.
+- Syntax:
+     - np.argsort(array, axis=-1)
+
+| Parameter | Description  |
+| --------- | ------------ |
+| `array`   | Input array  |
+| `axis`    | Axis to sort |
+
+### Basic Example:
+arr = np.array([40, 10, 30, 20])  
+result = np.argsort(arr)  
+print(result)   
+
+#### Understanding Output
+- Original array: 
+     - Index : 0   1   2   3   
+     - Value : 40 10 30 20 
+
+- Sorted values:
+     - 10 20 30 40 
+
+- Their original indices:
+     - 10 → index 1
+     - 20 → index 3
+     - 30 → index 2
+     - 40 → index 0
+
+- So output:
+     - [1 3 2 0]
+     - Value :           10, 20, 30, 40
+     - Original Index:   1   3   2   0 
