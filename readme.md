@@ -471,3 +471,7 @@ Instead of using for loop element by element NumPy performs operations directly 
 - Syntax:
      - np.argmin(array)
 
+### 4. nonzero() Function:
+- Finds non-zero elements and return their indexes.
+     - np.nonzero(array)
+
