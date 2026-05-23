@@ -436,4 +436,27 @@ Instead of using for loop element by element NumPy performs operations directly 
 | `neginf`  | Value to replace `-inf` |
 
 
+## Searching in NumPy
+### Searching in NumPy means finding:
+- Specific values
+- Index positions
+- Maximum/minimum values
+- Conditions inside arrays  
 
+- NumPy provides many searching functions.
+
+### Common Searching Functions
+| Function         | Purpose                           |
+| ---------------- | --------------------------------- |
+| `where()`        | Find elements based on condition  |
+| `argmax()`       | Index of maximum value            |
+| `argmin()`       | Index of minimum value            |
+| `nonzero()`      | Find non-zero elements            |
+| `searchsorted()` | Find insertion index              |
+| `extract()`      | Extract elements using condition  |
+| `argwhere()`     | Find indices satisfying condition |
+
+### 1. where() Function:  
+- Find elements matching a condition.
+- Syntax: 
+     - np.where(condition)
