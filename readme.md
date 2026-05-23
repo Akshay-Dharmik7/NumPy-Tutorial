@@ -508,3 +508,16 @@ Instead of using for loop element by element NumPy performs operations directly 
 | ----------- | ----------------- |
 | `condition` | Boolean condition |
 
+
+## Sorting in NumPy
+- Sorting in NumPy is used to arrange array elements in ascending or descending order.
+- NumPy provides several sorting functions.
+
+- Main Sorting Functions:
+
+| Function    | Purpose               |
+| ----------- | --------------------- |
+| `sort()`    | Sort array values     |
+| `argsort()` | Return sorted indices |
+| `lexsort()` | Multi-key sorting     |
+| `msort()`   | Sort along first axis |
