@@ -473,5 +473,17 @@ Instead of using for loop element by element NumPy performs operations directly 
 
 ### 4. nonzero() Function:
 - Finds non-zero elements and return their indexes.
+- Syntax:
      - np.nonzero(array)
+
+### 5. searchsorted():
+- searchsorted() in NumPy is used to find the position where an element should be inserted in a sorted array to maintain the sorted order.
+- Syntax:
+     - np.searchsorted(array, value, side='left')
+
+| Parameter | Description           |
+| --------- | --------------------- |
+| `array`   | Sorted input array    |
+| `value`   | Value to search       |
+| `side`    | `'left'` or `'right'` |
 
